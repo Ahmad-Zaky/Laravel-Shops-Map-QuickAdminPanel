@@ -136,7 +136,7 @@
 @endsection
 
 @section('scripts')
-<script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initialize&language=en&region=GB" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ config('maps.api_key') }}&libraries=places&callback=initialize&language=en&region=GB" async defer></script>
 <script src="/js/mapInput.js"></script>
 <script>
     var uploadedPhotosMap = {}
